@@ -3,7 +3,7 @@ AdminUser.create(email: "admin@user.com",
                  password_confirmation: "password", 
                  first_name: "Admin", 
                  last_name: "User",
-                 phone: "4352413613")
+                 phone: "5134523819")
 
 puts "1 AdminUser created"
 
@@ -12,7 +12,7 @@ puts "1 AdminUser created"
                     password_confirmation: "password", 
                     first_name: "Ron", 
                     last_name: "Swanson",
-                    phone: "4352413613")
+                    phone: "5134523819")
 
 puts "1 User created"
 
