@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe 'AuditLog Feature' do 
   before do 
-    admin_user = FactoryGirl.create(:admin_user)
+    admin_user = FactoryBot.create(:admin_user)
     login_as(admin_user, :scope => :user)
-    FactoryGirl.create(:audit_log)
+    FactoryBot.create(:audit_log)
   end
 
   describe 'index' do 
@@ -20,7 +20,7 @@ describe 'AuditLog Feature' do
 
     it 'cannot be accessed by a non-admin user' do 
       logout(:user)
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       login_as(user, :scope => :user)
 
       visit audit_logs_path
